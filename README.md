@@ -11,17 +11,13 @@ Por exemplo, para “dar um troco” de R$2,89, a melhor solução, isto é, o m
   * Contabilize e exiba o número de iterações para cada caso de teste;
   * O exercício pode ser feito em grupos de um, dois ou três elementos.
 
-## Escalonamento de Intervalos
-
-### O Problema
+## Problema do escalonamento de intervalos
 
 Um *intervalo* é um conjunto de números naturais consecutivos.  Um intervalo como  *{s,s+1,…,f−1,f}*  será denotado por  *(s,f)*. O primeiro número do par é o início do intervalo e o segundo é o término.  (As letras *s* e *f* lembram *start* e *finish* respectivamente.)
 
 Se temos vários intervalos, numerados de 1 a n, o início de um intervalo *i* será denotado por *s<sub>i</sub>* e o término por *f<sub>i</sub>*.  Suporemos sempre que *s<sub>i</sub> ≤ f<sub>i</sub>*.
 
 Um intervalo i é anterior a um intervalo j se  *f<sub>i</sub> < s<sub>j</sub>*.  Analogamente, i é posterior a j se  *s<sub>i</sub> > f<sub>j</sub>*.   Dois intervalos i e j são disjuntos se e somente se i é posterior a j ou anterior a j.   Uma coleção de intervalos é disjunta se os intervalos da coleção são disjuntos dois a dois.
-
-### Problema do escalonamento de intervalos
 
 Dada uma coleção S de intervalos, encontrar uma subcoleção disjunta máxima de S.
 
@@ -39,8 +35,6 @@ X 0 1 1  0 1 0 0  1  0 0  0
 ```
 
 É fácil verificar que a coleção de 4 intervalos definida por x é disjunta. Mas não é óbvio que ela seja máxima. Você tem certeza de que não existem 5 intervalos disjuntos dois a dois?
-
-### Algoritmo guloso
 
 Nosso problema pode ser resolvido por um algoritmo guloso. Para descrever o algoritmo, precisamos do seguinte conceito. Digamos que o primeiro intervalo de um coleção de intervalos é o que tem o menor término.
 
@@ -86,15 +80,13 @@ SDM-Guloso (s, f, n)
 8   devolva X
 ```
 
-2) **Assim:**
+1. **Assim:**
 
 * Implemente e teste uma solução para o problema descrito, usando aboradagem gulosa, como descrita;
 * Contabilize e exiba o número de iterações para cada caso de teste;
 * O exercício pode ser feito em grupos de um, dois ou três elementos.
 
 # Problema das n-rainhas
-
-## O problema
 
 O problema das N-rainhas consiste em encontrar uma combinação possível de N rainhas num tabuleiro de dimensão N por N tal que nenhuma das rainhas ataque qualquer outra. Duas rainhas atacam-se uma à outra quando estão na mesma linha, na mesma coluna ou na mesma diagonal do tabuleiro. Na figura que se segue pode ver-se as posições atacadas por uma rainha colocada num tabuleiro de dimensão 7 por 7 e ao lado uma possível solução para esse mesmo tabuleiro.
 
